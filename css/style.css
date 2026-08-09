@@ -672,6 +672,64 @@ h3.my-profession
     width: 100%;
     display: block;
 }
+.portfolio .portfolio-img
+{
+    position: relative;
+}
+.portfolio .portfolio-info
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+.portfolio .portfolio-item-inner:hover .portfolio-info
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+.portfolio .portfolio-info h4
+{
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.portfolio .portfolio-info p
+{
+    color: #f0f0f0;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+}
+.portfolio .portfolio-empty
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    border: 2px dashed var(--bg-black-50);
+    border-radius: 6px;
+    color: var(--text-black-700);
+    background: var(--bg-black-100);
+    cursor: default;
+}
+.portfolio .portfolio-empty i
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--skin-color);
+}
+.portfolio .portfolio-empty p
+{
+    font-size: 14px;
+    margin: 0;
+}
 /* Contact*/
 .contact-title
 {
